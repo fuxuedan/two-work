@@ -18,11 +18,13 @@ response = requests.get(url=url, headers=headers, verify=False)
 text = response.text
 # 转换成json格式
 jsonbj = json.loads(text)
-# 得到商品名字
+# 得到商品名
 name = jsonbj['list'][0]['items'][0]['name']
 # 得到商品价格
-yprice = (jsonbj['list'][0]['items'][0]['price']) * 0.01
-zprice = jsonbj['list'][0]['items'][0]['market_price'] * 0.01
+#折后价
+zprice = (jsonbj['list'][0]['items'][0]['price']) /100
+#原价
+yprice = jsonbj['list'][0]['items'][0]['market_price'] /100
 # 规格
 guige = jsonbj['list'][0]['items'][0]['spec']
 # 详情
