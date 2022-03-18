@@ -45,7 +45,7 @@ while (1):
     time = datetime.datetime.now()
 
     print(str(time) + "价格为" + str(yprice))
-    # 休眠6秒
-    sleep(3)
+    # 休眠5秒
+    sleep(5)
 
 
