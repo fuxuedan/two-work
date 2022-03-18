@@ -20,7 +20,7 @@ text = response.text
 jsonbj = json.loads(text)
 # 得到商品名
 name = jsonbj['list'][0]['items'][0]['name']
-# 得到商品价格
+# 得到商品价格信息
 #折后价
 zprice = (jsonbj['list'][0]['items'][0]['price']) /100
 #原价
