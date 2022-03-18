@@ -27,7 +27,7 @@ zprice = (jsonbj['list'][0]['items'][0]['price']) /100
 yprice = jsonbj['list'][0]['items'][0]['market_price'] /100
 # 规格
 guige = jsonbj['list'][0]['items'][0]['spec']
-# 详情
+# 详细信息
 x = jsonbj['list'][0]['items'][0]['sub_title']
 
 print("--------------" + name + "----------")
