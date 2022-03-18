@@ -42,7 +42,7 @@ while (1):
     text = response.text
     # 转换成json格式
     jsonbj = json.loads(text)
-    yprice = (jsonbj['list'][0]['items'][0]['price']) * 0.01
+    yprice = (jsonbj['list'][0]['items'][0]['price']) /100
     # 获取时间
     time = datetime.datetime.now()
 
